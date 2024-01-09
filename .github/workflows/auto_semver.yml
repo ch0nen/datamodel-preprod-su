@@ -3,7 +3,7 @@ name: Auto semver
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   auto_semver:

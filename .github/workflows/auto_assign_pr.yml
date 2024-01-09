@@ -1,0 +1,13 @@
+---
+name: Auto assign PR
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - master
+
+jobs:
+  call-reusable-auto-assign-pr:
+   name: Calling Auto assign PR workflow
+   uses: ch0nen/workflows/.github/workflows/auto_assign_pr.yml@master
